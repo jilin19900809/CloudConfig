@@ -1,20 +1,17 @@
 spring
-   profiles:
-      active:test
+	profiles:
+		active:test
 ---
- spring 
-   profiles:
-     active:test
-application:
-    name :tulinvip05-ms-test
-server:
-       port:8080
----
-
 spring 
-     profiles:
-      active:prod
-  application:
- name :tulinvip05-ms-prod
+	profiles:test
+    	application:
+	    	name :tulinvip05-ms-test
 server:
-port:8088
+	port:8080
+---
+spring 
+	profiles:prod
+	application:
+		name :tulinvip05-ms-prod
+server:
+	port:8088
